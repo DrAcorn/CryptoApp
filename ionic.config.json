@@ -1,0 +1,8 @@
+{
+  "name": "ciframsj",
+  "app_id": "530379dc",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
