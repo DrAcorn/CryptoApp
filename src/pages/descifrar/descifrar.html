@@ -1,0 +1,35 @@
+
+<ion-content padding>
+
+  <ion-refresher (ionRefresh)="Refresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown"
+    pullingText="Jala para borrar"
+    refreshingSpinner="circles"
+    refreshingText="Borrando...">
+
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div class="marco">
+
+    <div padding class="titulo">
+      <h1>Descifrar mensaje</h1>
+    </div>
+
+    <ion-item class="cuadro">
+      <ion-label floating>Copia aqui tu mensaje</ion-label>
+      <ion-input type="text" [(ngModel)]="mensaje"></ion-input>
+    </ion-item>
+
+    <button ion-button full (click)="descifrar(mensaje)" color="secondary" class="btn">Decifrar mensaje</button>
+
+    <ion-item>
+      <ion-label floating>Mensaje descifrado</ion-label>
+      <ion-input type="text" [(ngModel)]="mensajedecifrado"></ion-input>
+    </ion-item>
+
+      <button ion-button full (click)="compartir(mensajedecifrado)" color="dark" class="btn2">compartir</button>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header >
+  <ion-navbar color="dark">
+    <ion-title class="login_header">
+      Iniciar Sesión
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list >
+
+  <ion-item >
+    <ion-label floating>Usuario</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item >
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button block ion-button (click)="signInUser()" item-left color="secondary">Entrar</button>
+  <button block ion-button (click)="resetpswd()" item-left color="danger">Olvide mi contraseña</button>
+</div>
+
+
+</ion-content>

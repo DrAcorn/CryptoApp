@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Crear cuenta
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+
+</ion-list>
+
+<div padding>
+  <button block ion-button (click)="registerUser()" item-left color="secondary">Register</button>
+</div>
+
+</ion-content>
